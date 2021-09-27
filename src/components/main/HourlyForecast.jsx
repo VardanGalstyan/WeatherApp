@@ -1,4 +1,5 @@
 import React from 'react'
+import './mainStyles.css'
 import { Col } from 'react-bootstrap'
 import to12Hours from 'to12hours'
 import {weatherSwitch} from '../../helpers/switchCases.js'

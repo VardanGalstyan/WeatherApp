@@ -1,0 +1,67 @@
+#main {
+  height: 50vh;
+  text-align: center;
+  padding: 0px 8px;
+}
+
+#main .row {
+  display: flex;
+}
+
+#main .row h6 {
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+}
+
+#main .row span {
+  font-size: 110px;
+  font-weight: 700;
+  color: rgba(82, 76, 76, 0.205);
+  position: relative;
+}
+
+#main .row span {
+  font-size: 110px;
+  font-weight: 700;
+  color: rgba(82, 76, 76, 0.205);
+}
+
+#main .row h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgba(251, 251, 251, 0.952);
+}
+
+#main .row:last-child {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  margin: 0px 8px;
+}
+
+#forecast {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.24);
+  margin-right: 2px;
+  margin-left: 2px;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+#forecast:hover {
+  background-color: rgba(226, 226, 226, 0.726);
+}
+
+#forecast span {
+  font-size: 18px !important;
+  color: white !important;
+}
+
+#forecast span svg {
+  color: white;
+  font-size: 30px;
+}
