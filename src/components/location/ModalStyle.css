@@ -1,0 +1,9 @@
+.modal-body, .modal-content, #queryModal  {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#queryModal input {
+    background-color: rgb(255, 255, 255) !important;
+}
+

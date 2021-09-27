@@ -1,39 +1,115 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap");
+
+body, .dynamicBg {
+  background-image: url("https://wallpaperbat.com/img/346351-download-free-rain-wallpaper-weather-wallpaper-clouds-rain.jpg");
+  /* background-image: url("https://wallpaperaccess.com/full/2860359.jpg"); */
+  height: 100vh;
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Barlow", sans-serif;
+}
+
+/* Q U E R Y   B O X */
+
+#queryBox .row {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#queryBox .row .form-group {
+  display: flex;
+}
+
+.locationQuery {
+  background-color: rgba(245, 238, 238, 0.411) !important;
+  border: none !important;
+  border-radius: 17px !important;
+}
+
+#queryBox .row .form-group button {
+  display: none;
+}
+
+/* L O C A T I O N */
+
+#location .row {
+  border-radius: 12px;
+  padding: 15px;
+  background-color: rgba(143, 137, 137, 0.274);
+  color: white;
+  margin: 15px;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#location {
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+#location .row span:first-child {
+  font-size: 45px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
 }
 
-.App-header {
-  min-height: 100vh;
+#location .row svg {
+
+  font-size: 30px;
+}
+
+#location .row p {
+  height: 25px;
+  width: 25px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: rgba(51, 86, 133, 0.513);
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  top: 0px;
+  right: -28px;
+}
+
+#main {
+  height: 50vh;
+  text-align: center;
+}
+
+#main .row {
+  display: flex;
+}
+
+#main .row span {
+  font-size: 110px;
+  font-weight: 700;
+  color: rgba(82, 76, 76, 0.205);
+}
+
+#main .row h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgba(251, 251, 251, 0.952);
+}
+
+#main .row:last-child {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  flex-wrap: nowrap;
+}
+
+#forecast{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+#forecast span {
+  font-size: 18px !important;
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+#forecast span svg{
+  color: yellow;
 }
