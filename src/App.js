@@ -5,6 +5,7 @@ import Location from './components/location/Location';
 import MainCarousel from './components/main/MainCarousel'
 import { fillCurrentDataAction, fillWeatherDataBaseAction } from './redux/actions';
 import { useSelector, useDispatch } from 'react-redux'
+import ButtomMenu from './components/main/ButtomMenu';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <>
           <Location />
           <MainCarousel />
+          <ButtomMenu/>
         </>
       }
     </>
