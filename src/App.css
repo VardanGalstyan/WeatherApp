@@ -1,66 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap");
 
-body, .dynamicBg {
-  background-image: url("https://wallpaperbat.com/img/346351-download-free-rain-wallpaper-weather-wallpaper-clouds-rain.jpg");
-  /* background-image: url("https://wallpaperaccess.com/full/2860359.jpg"); */
-  height: 100vh;
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: cover;
+body {
   font-family: "Barlow", sans-serif;
 }
 
-/* Q U E R Y   B O X */
+.main-weather-app {
+  position: relative;
+}
 
-#queryBox .row {
-  height: 100vh;
+.main-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#queryBox .row .form-group {
+.main-loader {
+  text-align: center;
+}
+
+.main-weather-app .background-image img {
+  height: 100vh;
+  width: 100vw !important;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.main-weather-app .main-container {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Q U E R Y   B O X */
+
+#query-box .query-box-container {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://media.istockphoto.com/photos/supercell-thunderstorm-with-dramatic-storm-clouds-picture-id1279011240?b=1&k=20&m=1279011240&s=170667a&w=0&h=BC2h2YJwOLn7suTdy2wdK6W2ChubpHyBk3WI788P70M=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#query-box .form-group {
   display: flex;
 }
 
-.locationQuery {
-  background-color: rgba(245, 238, 238, 0.411) !important;
+#query-box .form-control {
+  background: rgba(253, 253, 253, 0.5);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
   border: none !important;
-  border-radius: 17px !important;
 }
 
-#queryBox .row .form-group button {
+#query-box .form-control::placeholder {
+  color: white;
+}
+
+#query-box .form-group button {
   display: none;
 }
 
 /* L O C A T I O N */
 
-#location .row {
+#location {
+  align-items: center;
+}
+
+#location .location-container {
+  backdrop-filter: blur(14.5px);
   border-radius: 12px;
   padding: 15px;
-  background-color: rgba(143, 137, 137, 0.274);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   margin: 15px;
   align-items: center;
   text-align: center;
 }
 
-#location {
-  align-items: center;
-}
-
-#location .row span:first-child {
+#location .location-city-name {
   font-size: 45px;
   font-weight: 700;
   position: relative;
   text-align: center;
+  z-index: 2 !important;
 }
 
-#location .row svg {
-
-  font-size: 30px;
-}
-
-#location .row p {
+#location .location-country-badge {
   height: 25px;
   width: 25px;
   font-size: 10px;
@@ -71,5 +103,5 @@ body, .dynamicBg {
   border-radius: 50%;
   top: 0px;
   right: -28px;
+  z-index: 2 !important;
 }
-

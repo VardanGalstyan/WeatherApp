@@ -1,13 +1,13 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { BiWind } from 'react-icons/bi'
-import {WiHumidity} from 'react-icons/wi'
+import { WiHumidity } from 'react-icons/wi'
 
 function ButtomMenu() {
     return (
-        <Container id='buttonMenu'>
-            <Row>
-                <Col>
+        <Container id='bottom-menu'>
+            <Row className='bottom-menu-holder'>
+                <Col className='bottom-menu-item-icon'>
                     <BiWind />
                 </Col>
                 <Col>
@@ -23,11 +23,11 @@ function ButtomMenu() {
                     <span>GUST</span>
                 </Col>
             </Row>
-            <Row>
+            <Row className='bottom-menu-holder'>
                 <Col>
                     <WiHumidity />
                 </Col>
-             </Row>
+            </Row>
         </Container>
     )
 }

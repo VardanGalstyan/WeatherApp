@@ -1,5 +1,5 @@
 let d = new Date();
-let month = new Array();
+let month = [];
 month[0] = "January";
 month[1] = "February";
 month[2] = "March";

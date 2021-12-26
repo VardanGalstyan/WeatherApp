@@ -4,6 +4,7 @@ import queryValueReducer from "../reducers/queryReducer.js"
 import thunk from "redux-thunk"
 import currentDataBaseReducer from "../reducers/currentReducer.js"
 import queryModalReducer from "../reducers/QueryModalReducer.js"
+import dependencyReducer from "../reducers/dependencyReducer.js"
 
 
 
@@ -20,11 +21,17 @@ export const initialState = {
     },
 
     currentWeather: {
-        data: []
+        data: [],
+        loading: false,
+        error: false,
     },
 
-    queryModal : {
-        onShow : null
+    queryModal: {
+        onShow: null
+    },
+
+    dependency: {
+        value: ''
     }
 
 
@@ -34,14 +41,15 @@ const combinedReducers = combineReducers({
     searchValue: queryValueReducer,
     weather: weatherDataBaseReducer,
     currentWeather: currentDataBaseReducer,
-    queryModal: queryModalReducer
+    queryModal: queryModalReducer,
+    dependency: dependencyReducer
 })
 
-
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const configureStore = createStore(
     combinedReducers,
     initialState,
-    process.env.REACT_APP_DEVELOPMENT ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__(applyMiddleware(thunk)) : compose(applyMiddleware(thunk))
+    process.env.REACT_APP_DEVELOPMENT ? composeEnhancers(applyMiddleware(thunk)) : compose(applyMiddleware(thunk))
 )
 
 export default configureStore

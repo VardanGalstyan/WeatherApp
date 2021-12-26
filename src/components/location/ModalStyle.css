@@ -1,9 +1,10 @@
-.modal-body, .modal-content, #queryModal  {
-    background-color: transparent !important;
-    border: none !important;
+.modal-body,
+.modal-content,
+#query-modal {
+  background-color: transparent !important;
+  border: none !important;
 }
 
-#queryModal input {
-    background-color: rgb(255, 255, 255) !important;
+#query-modal input {
+  background-color: rgb(255, 255, 255) !important;
 }
-

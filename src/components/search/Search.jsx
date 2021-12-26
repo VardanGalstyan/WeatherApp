@@ -17,12 +17,12 @@ function Search() {
     }
 
     return (
-        <Container id='queryBox'>
-            <Row>
+        <Container fluid id='query-box'>
+            <Row className='query-box-container'>
                 <Form onSubmit={onSubmit}>
                     <Form.Group>
                         <Form.Control
-                            className='locationQuery'
+                            className='location-query'
                             type="text"
                             placeholder="Select your city..."
                             value={queryValue}

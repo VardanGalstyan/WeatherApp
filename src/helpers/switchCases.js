@@ -1,4 +1,4 @@
-import { IoMdSunny, IoIosPartlySunny, IoIosRainy, IoIosSnow, IoIosCloud, IoIosThunderstorm } from 'react-icons/io'
+import { IoMdSunny, IoIosPartlySunny, IoIosRainy, IoIosCloud } from 'react-icons/io'
 import { GiDustCloud } from 'react-icons/gi'
 
 
@@ -30,16 +30,16 @@ export const backgroundSwitch = (key) => {
     let background
     switch (key) {
         case "Rain":
-            background = {backgroundImage: `"https://wallpaperaccess.com/full/2860359.jpg"`}
+            background = { backgroundImage: `"https://wallpaperaccess.com/full/2860359.jpg"` }
             break;
         case "Clear":
-            background = {backgroundImage: `https://wallpaperaccess.com/full/2860359.jpg`}
+            background = { backgroundImage: `https://wallpaperaccess.com/full/2860359.jpg` }
             break;
         case "Clouds" || "few clouds":
-            background = {backgroundImage: `https://wallpaperbat.com/img/346351-download-free-rain-wallpaper-weather-wallpaper-clouds-rain.jpg`}
+            background = { backgroundImage: `https://wallpaperbat.com/img/346351-download-free-rain-wallpaper-weather-wallpaper-clouds-rain.jpg` }
             break;
         case "Dust":
-            background = {backgroundImage: `something.com`}
+            background = { backgroundImage: `something.com` }
             break;
 
         default:

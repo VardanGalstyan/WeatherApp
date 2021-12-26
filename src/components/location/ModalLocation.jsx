@@ -1,15 +1,14 @@
 import './ModalStyle.css'
 import React, { useState } from "react";
 import { Modal, Form } from 'react-bootstrap'
-import { useDispatch, useSelector } from 'react-redux'
-import { searchQueryAction, setQueryModalAction } from '../../redux/actions'
+import { useDispatch } from 'react-redux'
+import { searchQueryAction } from '../../redux/actions'
 
 
 
-const  ModalQueryLocation = (props) => {
+const ModalQueryLocation = (props) => {
 
     const dispatch = useDispatch()
-    const onShow = useSelector(state => state.queryModal.onShow)
     const [queryValue, setQueryValue] = useState('')
 
 
@@ -17,7 +16,7 @@ const  ModalQueryLocation = (props) => {
         e.preventDefault()
         dispatch(searchQueryAction(queryValue))
         setQueryValue('')
-        dispatch(setQueryModalAction(false))
+        props.onHide()
     }
 
 
@@ -27,22 +26,23 @@ const  ModalQueryLocation = (props) => {
             size="sm"
             aria-labelledby="contained-modal-title-vcenter"
             centered
-            id='queryModal'
-            show={onShow}
+            id='query-modal'
+            show={props.show}
+            animation
         >
             <Modal.Body>
                 <Form onSubmit={queryOnSubmit} >
                     <Form.Group>
                         <Form.Control
-                            className='locationQuery'
+                            className='location-query'
                             type="text"
-                            placeholder="Choose different city..."
+                            placeholder="Choose a different city..."
                             value={queryValue}
                             onChange={(e) => setQueryValue(e.target.value)}
                         />
                     </Form.Group>
                 </Form>
-            </Modal.Body>         
+            </Modal.Body>
         </Modal>
     );
 }
