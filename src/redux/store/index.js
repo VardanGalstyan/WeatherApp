@@ -4,9 +4,6 @@ import queryValueReducer from "../reducers/queryReducer.js"
 import thunk from "redux-thunk"
 import currentDataBaseReducer from "../reducers/currentReducer.js"
 import queryModalReducer from "../reducers/QueryModalReducer.js"
-import dependencyReducer from "../reducers/dependencyReducer.js"
-
-
 
 export const initialState = {
 
@@ -30,11 +27,6 @@ export const initialState = {
         onShow: null
     },
 
-    dependency: {
-        value: ''
-    }
-
-
 }
 
 const combinedReducers = combineReducers({
@@ -42,7 +34,6 @@ const combinedReducers = combineReducers({
     weather: weatherDataBaseReducer,
     currentWeather: currentDataBaseReducer,
     queryModal: queryModalReducer,
-    dependency: dependencyReducer
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

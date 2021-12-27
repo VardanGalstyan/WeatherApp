@@ -6,6 +6,8 @@ body {
 
 .main-weather-app {
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .main-container {
@@ -13,18 +15,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative !important;
 }
 
 .main-loader {
   text-align: center;
-}
-
-.main-weather-app .background-image img {
-  height: 100vh;
-  width: 100vw !important;
-  position: absolute;
-  z-index: -1;
-  object-fit: cover;
 }
 
 .main-weather-app .main-container {
@@ -38,12 +33,14 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-image: url("https://media.istockphoto.com/photos/supercell-thunderstorm-with-dramatic-storm-clouds-picture-id1279011240?b=1&k=20&m=1279011240&s=170667a&w=0&h=BC2h2YJwOLn7suTdy2wdK6W2ChubpHyBk3WI788P70M=");
+  background-image: url("https://www.clubmarine.com.au/articleimages/31-3-Watch-the-weather/$FILE/Watch-the-weather-image1-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 #query-box .form-group {
+  z-index: 2;
   display: flex;
 }
 
@@ -53,20 +50,45 @@ body {
   -webkit-backdrop-filter: blur(14.5px);
   border-radius: 10px;
   border: none !important;
+  color: white;
 }
 
 #query-box .form-control::placeholder {
-  color: white;
+  color: rgba(8, 8, 8, 0.411);
+  font-size: 12px;
+}
+#query-box .form-control:focus {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  border: rgba(255, 255, 255, 0.342) 1px solid !important;
 }
 
 #query-box .form-group button {
   display: none;
 }
 
+#query-box .query-box-background-text {
+  font-size: 20vw;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.103);
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #query-box .query-box-background-text {
+    top: 70%;
+  }
+}
+
 /* L O C A T I O N */
 
 #location {
   align-items: center;
+  z-index: 2;
 }
 
 #location .location-container {
@@ -74,7 +96,7 @@ body {
   border-radius: 12px;
   padding: 15px;
   background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(153, 197, 223, 0.589);
   -webkit-backdrop-filter: blur(14.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);

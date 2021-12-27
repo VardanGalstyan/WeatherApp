@@ -1,4 +1,4 @@
-import { FILL_WEATHER_DATA, FILL_DATA_ERROR, FILL_DATA_LOADING, ADD_QUERY, FILL_CURRENT_WEATHER, SET_MODAL_TRUE, ADD_DEPENDENCY } from "./types";
+import { FILL_WEATHER_DATA, FILL_DATA_ERROR, FILL_DATA_LOADING, ADD_QUERY, FILL_CURRENT_WEATHER, SET_MODAL_TRUE } from "./types";
 
 
 
@@ -128,11 +128,3 @@ export const setQueryModalAction = (setTrue) => {
     }
 }
 
-export const setDependencyAction = (value) => {
-    return (dispatch, getState) => {
-        dispatch({
-            type: ADD_DEPENDENCY,
-            payload: value
-        })
-    }
-}

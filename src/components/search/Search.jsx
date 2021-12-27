@@ -33,7 +33,9 @@ function Search() {
                         </Button>
                     </Form.Group>
                 </Form>
-
+            </Row>
+            <Row>
+                <span className='query-box-background-text'>WEATHER</span>
             </Row>
         </Container>
     )

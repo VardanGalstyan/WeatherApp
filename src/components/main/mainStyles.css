@@ -9,6 +9,12 @@
   align-items: center;
 }
 
+#main .carousel-indicators {
+  margin-top: 10px !important;
+  position: fixed;
+  bottom: 40px;
+}
+
 #main .carousel-item-main-display .carousel-date {
   justify-content: center;
   color: white;
@@ -26,7 +32,6 @@
   font-size: 110px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.555);
-  position: relative;
 }
 
 #main .carousel-description-temp {
@@ -49,7 +54,7 @@
   align-items: center;
   justify-content: center;
   margin: 50px 2px 0px 2px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(137, 196, 230, 0.5);
   box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.349);
   backdrop-filter: blur(14.5px);
   -webkit-backdrop-filter: blur(14.5px);
@@ -75,12 +80,15 @@
 
 #bottom-menu {
   padding: 0px;
+  z-index: 2;
 }
 
 #bottom-menu .bottom-menu-holder {
+  align-items: center;
   margin: 8px 9px;
   padding: 5px 15px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(153, 197, 223, 0.589);
+  /* background: rgba(255, 255, 255, 0.5); */
   box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
   backdrop-filter: blur(14.5px);
   -webkit-backdrop-filter: blur(14.5px);
@@ -109,4 +117,16 @@
 #bottom-menu svg {
   color: white;
   font-size: 30px;
+}
+
+#main img {
+  height: 100%;
+  width: 100% !important;
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
