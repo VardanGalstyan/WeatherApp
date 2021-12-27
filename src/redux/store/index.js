@@ -37,11 +37,11 @@ const combinedReducers = combineReducers({
     queryModal: queryModalReducer,
 })
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const configureStore = createStore(
     combinedReducers,
     initialState,
-    process.env.REACT_APP_DEVELOPMENT ?  compose(applyMiddleware(thunk)) : composeEnhancers(applyMiddleware(thunk))
+    compose(applyMiddleware(thunk))
 )
 
 export default configureStore
