@@ -99,6 +99,7 @@ html {
 @media screen and (max-width: 768px) {
   #query-box .query-box-background-text {
     top: 70%;
+    height: 200px;
   }
 }
 

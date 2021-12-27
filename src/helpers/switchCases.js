@@ -30,7 +30,7 @@ export const weatherSwitch = (key) => {
 export const handleBackgroundImage = (currentData) => {
 
     if (currentData && currentData === 'Clear') {
-        return 'https://img.resized.co/lovin_ie/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL2ltYWdlcy5sb3Zpbi5pZVxcXC91cGxvYWRzXFxcLzIwMjFcXFwvMDNcXFwvMTUxMDIwMTFcXFwvU2NyZWVuc2hvdC0yMDIxLTAzLTE1LTEwMjAwMC5qcGdcIixcIndpZHRoXCI6NzM2LFwiaGVpZ2h0XCI6NDEyLFwiZGVmYXVsdFwiOlwiaHR0cHM6XFxcL1xcXC9sb3Zpbi5pZVxcXC9pbWFnZXNcXFwvbm8taW1hZ2UucG5nXCIsXCJvcHRpb25zXCI6e1wib3V0cHV0XCI6XCJ3ZWJwXCJ9fSIsImhhc2giOiIzYjBkN2I0OTQyOGM5YjU5YTQ5OGI3NTk4NDk1NTdmN2U0NDdmMzZhIn0=/paddy-s-day-weather-to-remain-dry-and-sunny-with-temperatures-as-high-as-17-degrees-celsius.jpg'
+        return 'https://i1.pickpik.com/photos/366/101/152/desert-sand-landscape-sun-preview.jpg'
     }
     if (currentData && currentData === 'Clouds') {
         return 'https://wallpaperbat.com/img/346351-download-free-rain-wallpaper-weather-wallpaper-clouds-rain.jpg'
