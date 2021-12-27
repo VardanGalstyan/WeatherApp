@@ -5,7 +5,7 @@ import Location from './components/location/Location';
 import MainCarousel from './components/main/MainCarousel'
 import { fillCurrentDataAction, fillWeatherDataBaseAction } from './redux/actions';
 import { useSelector, useDispatch } from 'react-redux'
-import ButtomMenu from './components/main/BottomMenu';
+import BottomMenu from './components/main/BottomMenu';
 import Loader from 'react-loader-spinner'
 
 
@@ -44,7 +44,7 @@ function App() {
           <div className='main-container'>
             <Location />
             <MainCarousel />
-            <ButtomMenu />
+            <BottomMenu />
           </div>
       }
     </div>
