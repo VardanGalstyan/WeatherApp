@@ -18,10 +18,12 @@ export const fillWeatherDataBaseAction = () => {
             let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${query}&appid=9c7a2c776af8283d79f4c3c8f7a25591`)
             if (response.ok) {
                 let data = await response.json()
-                dispatch({
-                    type: FILL_DATA_LOADING,
-                    payload: false
-                })
+                setTimeout(() => {
+                    dispatch({
+                        type: FILL_DATA_LOADING,
+                        payload: false
+                    })
+                }, 1000)
                 dispatch({
                     type: FILL_WEATHER_DATA,
                     payload: data
