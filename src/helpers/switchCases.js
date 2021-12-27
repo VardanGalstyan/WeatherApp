@@ -41,6 +41,9 @@ export const handleBackgroundImage = (currentData) => {
     if (currentData && currentData === 'Snow') {
         return 'https://www.vmcdn.ca/f/files/via/images/weather/vancouver-weather-forecast-december-2021-snowfall.jpg;w=960'
     }
+    if (currentData && currentData === 'Thunderstorm') {
+        return 'https://cms.accuweather.com/wp-content/uploads/2020/06/cropped-GettyImages-940296124.jpg'
+    }
     if (currentData && currentData === 'Mist' && "Fog") {
         return 'https://iresizer.devops.arabiaweather.com/resize?url=https://adminassets.devops.arabiaweather.com/sites/default/files/field/image/ArabiaWeatherFogPixabay.jpg&size=850x478&force_jpg=1'
     }
