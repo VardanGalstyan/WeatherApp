@@ -47,7 +47,7 @@ export const handleBackgroundImage = (currentData) => {
     if (currentData && currentData === 'Drizzle') {
         return 'https://www.multibhashi.com/wp-content/uploads/2017/12/implicit.jpg'
     }
-    if (currentData && currentData === 'Mist' && "Fog") {
+    if (currentData === 'Mist' || "Fog") {
         return 'https://iresizer.devops.arabiaweather.com/resize?url=https://adminassets.devops.arabiaweather.com/sites/default/files/field/image/ArabiaWeatherFogPixabay.jpg&size=850x478&force_jpg=1'
     }
 }
