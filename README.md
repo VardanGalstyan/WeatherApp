@@ -1,6 +1,6 @@
 ## About The Project
 
-[Rainy Day Script](./public/Screenshot 2021-12-28 at 12.39.23.png)
+[Rainy Day Script](/public/Screenshot 2021-12-28 at 12.39.23.png)
 <!-- [Rainy Day Script](align="left" alt="projScreen1" width="200px" src="./public/Screenshot 2021-12-28 at 12.39.23.png")
 [Rainy Day Script](align="left" alt="projScreen1" width="200px" src="./public/Screenshot 2021-12-28 at 12.39.23.png")
 [Rainy Day Script](align="left" alt="projScreen1" width="200px" src="./public/Screenshot 2021-12-28 at 12.39.23.png") -->
