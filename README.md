@@ -1,9 +1,12 @@
 ## About The Project
 
-[<img align="left" alt="projScreen1" width="60px" src="./public/Screenshot 2021-12-28 at 12.39.23.png" />]
-[<img align="left" alt="ProjScreen2" width="60px" src="./public/Screenshot 2021-12-28 at 12.40.22.png" />]
+[<img align="left" alt="projScreen1" width="150px" src="./public/Screenshot 2021-12-28 at 12.39.23.png" />][twitter]
+[<img align="left" alt="ProjScreen2" width="150px" src="./public/Screenshot 2021-12-28 at 12.40.22.png" />][twitter]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+<br/>
+<br/>
+
+---
 
 ## Available Scripts
 
