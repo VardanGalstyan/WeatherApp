@@ -15,11 +15,13 @@
   bottom: 40px;
 }
 
+
 #main .carousel-item-main-display .carousel-date {
   justify-content: center;
   color: white;
   font-weight: 700;
 }
+
 
 #main .carousel-description {
   display: flex;

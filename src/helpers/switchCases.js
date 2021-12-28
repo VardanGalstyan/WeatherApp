@@ -30,7 +30,7 @@ export const weatherSwitch = (key) => {
 export const handleBackgroundImage = (currentData) => {
 
     if (currentData && currentData === 'Clear') {
-        return 'https://i1.pickpik.com/photos/366/101/152/desert-sand-landscape-sun-preview.jpg'
+        return 'https://s1.1zoom.me/b5050/503/Sea_Beach_Palms_Trees_Horizon_529342_3840x2400.jpg'
     }
     if (currentData && currentData === 'Clouds') {
         return 'https://wallpaperbat.com/img/346351-download-free-rain-wallpaper-weather-wallpaper-clouds-rain.jpg'
