@@ -1,7 +1,7 @@
 ## About The Project
 
-[<img align="left" alt="projScreen1" width="150px" src="./public/Screenshot 2021-12-28 at 12.39.23.png" />][twitter]
-[<img align="left" alt="ProjScreen2" width="150px" src="./public/Screenshot 2021-12-28 at 12.40.22.png" />][twitter]
+[<img align="left" alt="projScreen1" width="200px" src="./public/Screenshot 2021-12-28 at 12.39.23.png" />]
+[<img align="left" alt="ProjScreen2" width="200px" src="./public/Screenshot 2021-12-28 at 12.40.22.png" />]
 
 <br/>
 <br/>
