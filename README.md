@@ -1,12 +1,9 @@
 ## About The Project
 
 <p>
-<img align="left" alt="Redux" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/redux/redux.png" />
-<img align="left" alt="Redux" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/redux/redux.png" />
+<img align="left" alt="Redux" width="150px" src="./public/Screenshot 2021-12-28 at 12.39.23.png" />
+<img align="left" alt="Redux" width="150px" src="./public/Screenshot 2021-12-28 at 12.40.22.png" />
 </p>
-
-[<img align="left" alt="Visual Studio Code" width="26px" src="./public/Screenshot 2021-12-28 at 12.39.23.png" />][webdevplaylist]
-![Alt text](/public/Screenshot 2021-12-28 at 12.39.23.png?raw=true "Title")
 
 <!-- [Rainy Day Script](align="left" alt="projScreen1" width="200px" src="./public/Screenshot 2021-12-28 at 12.39.23.png")
 [Rainy Day Script](align="left" alt="projScreen1" width="200px" src="./public/Screenshot 2021-12-28 at 12.39.23.png")
