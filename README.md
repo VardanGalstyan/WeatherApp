@@ -1,10 +1,10 @@
 ## About The Project
 
 <p>
-    <img  alt="Sample 1" width="150px" src="./public/Screenshot 2021-12-28 at 12.40.22.png" />
-    <img  alt="Sample 2" width="150px" src="./public/Screenshot 2021-12-28 at 12.39.23.png" />
-    <img  alt="Sample 3" width="150px" src="./public/Screenshot 2021-12-28 at 19.40.04.png" />
-    <img  alt="Sample 4" width="150px" src="./public/Screenshot 2021-12-28 at 19.40.42.png" />
+    <img  alt="Sample 1" width="180px" src="./public/Screenshot 2021-12-28 at 12.40.22.png" />
+    <img  alt="Sample 2" width="180px" src="./public/Screenshot 2021-12-28 at 12.39.23.png" />
+    <img  alt="Sample 3" width="180px" src="./public/Screenshot 2021-12-28 at 19.40.04.png" />
+    <img  alt="Sample 4" width="180px" src="./public/Screenshot 2021-12-28 at 19.40.42.png" />
 </p>
 
 <br/>
