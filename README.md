@@ -1,7 +1,6 @@
 ## About The Project
 
-[![Weather-App][product-screenshot](https://weather-to-day.herokuapp.com/)]
-
+[![Weather-App]["./public/screenshot 2021-12-28 at 12.39.23.png", "./public/screenshot 2021-12-28 at 12.40.22.png"](https://weather-to-day.herokuapp.com/)]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
