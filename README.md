@@ -1,6 +1,7 @@
 ## About The Project
 
-![Rainy Day Script]['./public/Screenshot 2021-12-28 at 12.39.23.png']
+[<img align="left" alt="Visual Studio Code" width="26px" src="./public/Screenshot 2021-12-28 at 12.39.23.png" />][webdevplaylist]
+
 <!-- [Rainy Day Script](align="left" alt="projScreen1" width="200px" src="./public/Screenshot 2021-12-28 at 12.39.23.png")
 [Rainy Day Script](align="left" alt="projScreen1" width="200px" src="./public/Screenshot 2021-12-28 at 12.39.23.png")
 [Rainy Day Script](align="left" alt="projScreen1" width="200px" src="./public/Screenshot 2021-12-28 at 12.39.23.png") -->
