@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap');
 
 *,
 html {
@@ -6,15 +6,9 @@ html {
   padding: 0;
 }
 
-#root {
-  background-color: wheat;
-  height: 0px;
-}
-
-.main-weather-app {
-  margin: 0;
-  padding: 0;
-  height: inherit;
+.weather-app {
+  height: 100vh;
+  width: 100%;
 }
 
 .main-container {
@@ -28,7 +22,7 @@ html {
   text-align: center;
 }
 
-.main-weather-app .main-container {
+.weather-app .main-container {
   padding: 10px;
   position: relative;
 }
@@ -39,20 +33,37 @@ html {
   margin: 0;
   padding: 0;
   height: 100vh;
-  /* background-color: tomato; */
+  width: 100%;
+  background-color: red;
 }
 
-#query-box .query-box-container {
+#query-box {
   height: 100%;
-  padding: 0;
+  width: 100%;
   margin: 0;
-  width: 100vw !important;
-  background-image: url("https://www.clubmarine.com.au/articleimages/31-3-Watch-the-weather/$FILE/Watch-the-weather-image1-hero.jpg");
+  background-image: url('./assets/main-background.webp');
   align-items: center;
   justify-content: center;
+  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative !important;
+}
+
+#query-box .query-box-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.801); /* Adjust opacity for desired darkness */
+  z-index: 1;
+  pointer-events: none; /* Ensure it doesn't interfere with content */
+}
+
+#query-box .query-box-container > * {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
 }
 
 #query-box .form-group {

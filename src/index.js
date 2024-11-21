@@ -1,22 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import { Provider } from 'react-redux'
-import configureStore from './redux/store';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import App from './App';
 
+const queryClient = new QueryClient();
 
-ReactDOM.render(
-  <Provider store = {configureStore}>
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+
+root.render(
+  <QueryClientProvider store={queryClient}>
     <App />,
-  </Provider>,
-  document.getElementById('root')
+  </QueryClientProvider>
 );
-
-
-serviceWorker.unregister();
