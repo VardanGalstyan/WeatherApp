@@ -1,33 +1,33 @@
-import './App.css';
-import { useEffect } from 'react';
-import Search from './components/search/Search';
-import Location from './components/location/Location';
-import MainCarousel from './components/main/MainCarousel';
-import {
-  fillCurrentDataAction,
-  fillWeatherDataBaseAction,
-} from './redux/actions';
-import { useSelector, useDispatch } from 'react-redux';
-import BottomMenu from './components/main/BottomMenu';
-import Loader from 'react-loader-spinner';
+import "./App.css";
+import Loader from "react-loader-spinner";
+import { getWeatherData } from "./api/weather";
+import Search from "./components/search/Search";
+import { useAtomValue } from "jotai";
+import { locationAtom } from "./state";
+import { useQuery } from "@tanstack/react-query";
+import Location from "components/location/Location";
+import MainCarousel from "components/main/MainCarousel";
+import { getForeCaseData } from "api/forecast";
+import ButtomMenu from "components/main/BottomMenu";
 
 function App() {
-  const data = useSelector((state) => state.weather.list.list);
-  const query = useSelector((state) => state.searchValue.query);
-  const loading = useSelector((state) => state.currentWeather.loading);
-  const dispatch = useDispatch();
+  const query = useAtomValue(locationAtom);
 
-  useEffect(() => {
-    dispatch(fillWeatherDataBaseAction());
-    dispatch(fillCurrentDataAction());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query]);
+  const { data, isLoading } = useQuery({
+    queryKey: ["weatherAndForecast", query],
+    queryFn: async () => {
+      const weather = await getWeatherData(query);
+      const forecast = await getForeCaseData(query);
+      return { weather, forecast };
+    },
+    enabled: !!query,
+  });
 
   return (
     <div className="weather-app">
       {!data ? (
         <Search />
-      ) : loading ? (
+      ) : isLoading ? (
         <Loader
           className="main-loader"
           type="ThreeDots"
@@ -37,9 +37,12 @@ function App() {
         />
       ) : (
         <div className="main-container">
-          <Location />
-          <MainCarousel />
-          <BottomMenu />
+          <Location city={data?.forecast?.data?.city} />
+          <MainCarousel
+            forecast={data?.forecast?.data}
+            weather={data?.weather?.data}
+          />
+          <ButtomMenu weather={data?.weather?.data} />
         </div>
       )}
     </div>

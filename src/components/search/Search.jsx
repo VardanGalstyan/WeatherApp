@@ -1,17 +1,16 @@
-import { useState } from 'react';
-import { Container, Row, Form, Button } from 'react-bootstrap';
-import { useDispatch } from 'react-redux';
-import { searchQueryAction } from '../../redux/actions';
-import '../../App.css';
+import { useSetAtom } from "jotai";
+import { useState } from "react";
+import { Button, Container, Form, Row } from "react-bootstrap";
+import "../../App.css";
+import { locationAtom } from "../../state";
 
 function Search() {
-  const dispatch = useDispatch();
-  const [queryValue, setQueryValue] = useState('');
+  const setLocation = useSetAtom(locationAtom);
+  const [queryValue, setQueryValue] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();
-    dispatch(searchQueryAction(queryValue));
-    setQueryValue('');
+    setLocation(queryValue);
   };
 
   return (
