@@ -33,9 +33,7 @@ function MainCarousel({ forecast, weather }) {
               alt="background"
             />
             <h6 className="carousel-date">
-              {getMonthString(today.getMonth()).toUpperCase() +
-                " " +
-                today.getDate()}
+              {getMonthString(today).toUpperCase() + " " + today.getDate()}
             </h6>
             <div className="carousel-description">
               <span className="carousel-description-title">

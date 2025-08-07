@@ -23,7 +23,6 @@ const ModalQueryLocation = (props) => {
       centered
       id="query-modal"
       show={props.show}
-      animation
     >
       <Modal.Body>
         <Form onSubmit={queryOnSubmit}>
